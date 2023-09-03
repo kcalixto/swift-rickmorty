@@ -1,2 +1,1 @@
 # swift-rickmorty
-# swift-rickmorty
