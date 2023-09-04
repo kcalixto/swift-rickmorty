@@ -26,6 +26,7 @@
 		D5D89C1D2AA555BE001197E5 /* RMSingleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D89C1C2AA555BE001197E5 /* RMSingleLocation.swift */; };
 		D5D89C1F2AA5566F001197E5 /* RMCharacterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D89C1E2AA5566F001197E5 /* RMCharacterStatus.swift */; };
 		D5D89C212AA5568D001197E5 /* RMCharacterGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D89C202AA5568D001197E5 /* RMCharacterGender.swift */; };
+		D5D89C252AA5679A001197E5 /* GetAllCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D89C242AA5679A001197E5 /* GetAllCharactersResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		D5D89C1C2AA555BE001197E5 /* RMSingleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSingleLocation.swift; sourceTree = "<group>"; };
 		D5D89C1E2AA5566F001197E5 /* RMCharacterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterStatus.swift; sourceTree = "<group>"; };
 		D5D89C202AA5568D001197E5 /* RMCharacterGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterGender.swift; sourceTree = "<group>"; };
+		D5D89C242AA5679A001197E5 /* GetAllCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCharactersResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,13 +124,8 @@
 		D54676C82AA2FA2F000914F9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D54676CC2AA2FAC9000914F9 /* RMLocation.swift */,
-				D5D89C1C2AA555BE001197E5 /* RMSingleLocation.swift */,
-				D5D89C1A2AA55554001197E5 /* RMOrigin.swift */,
-				D54676CE2AA2FAD2000914F9 /* RMCharacter.swift */,
-				D5D89C202AA5568D001197E5 /* RMCharacterGender.swift */,
-				D5D89C1E2AA5566F001197E5 /* RMCharacterStatus.swift */,
-				D54676D02AA2FAD9000914F9 /* RMEpisode.swift */,
+				D5D89C232AA56784001197E5 /* APIResponseTypes */,
+				D5D89C222AA56777001197E5 /* DataTypes */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,6 +165,28 @@
 				D54676D92AA2FBC2000914F9 /* RMSettingsViewController.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		D5D89C222AA56777001197E5 /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				D54676CC2AA2FAC9000914F9 /* RMLocation.swift */,
+				D5D89C1C2AA555BE001197E5 /* RMSingleLocation.swift */,
+				D5D89C1A2AA55554001197E5 /* RMOrigin.swift */,
+				D54676CE2AA2FAD2000914F9 /* RMCharacter.swift */,
+				D5D89C202AA5568D001197E5 /* RMCharacterGender.swift */,
+				D5D89C1E2AA5566F001197E5 /* RMCharacterStatus.swift */,
+				D54676D02AA2FAD9000914F9 /* RMEpisode.swift */,
+			);
+			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		D5D89C232AA56784001197E5 /* APIResponseTypes */ = {
+			isa = PBXGroup;
+			children = (
+				D5D89C242AA5679A001197E5 /* GetAllCharactersResponse.swift */,
+			);
+			path = APIResponseTypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +264,7 @@
 				D5D89C1F2AA5566F001197E5 /* RMCharacterStatus.swift in Sources */,
 				D5D89C212AA5568D001197E5 /* RMCharacterGender.swift in Sources */,
 				D54676D62AA2FBAF000914F9 /* RMLocationViewController.swift in Sources */,
+				D5D89C252AA5679A001197E5 /* GetAllCharactersResponse.swift in Sources */,
 				D54676D12AA2FAD9000914F9 /* RMEpisode.swift in Sources */,
 				D54676B42AA2F5F7000914F9 /* RMBarViewController.swift in Sources */,
 				D54676D82AA2FBBA000914F9 /* RMEpisodeViewController.swift in Sources */,

@@ -23,8 +23,8 @@ final class RMService {
 //    using generics :)
     public func execute<T: Codable>(
         _ request: RMRequest,
-        expecting type: T.Type,
-        completion: @escaping (Result<String, Error>) -> Void
+        expecting expectingType: T.Type,
+        completion: @escaping (Result<T, Error>) -> Void
     ){
         guard let urlRequest = self.request(from: request) else {
             completion(.failure(RMServiceError.failedToCreateRequest))
@@ -38,9 +38,8 @@ final class RMService {
             }
 //            decode response
             do {
-                let json = try JSONSerialization.jsonObject(with: data)
-                print(String(describing: json))
-//
+                let result = try JSONDecoder().decode(expectingType.self, from: data)
+                completion(.success(result))
             }
             catch {
                 completion(.failure(error))
